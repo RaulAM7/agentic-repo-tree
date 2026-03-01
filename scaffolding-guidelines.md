@@ -195,6 +195,8 @@ Cada tarea relevante vive como **spec**.
 - Pueden incluir plantillas, ejemplos y pasos.
 
 **Skills base recomendadas**
+- `initial_context_building/` (pesada, bootstrap)
+  - primera ejecución en proyecto nuevo: lee 00_inbox + harness + docs raíz + contexto existente → llena todos los slots de 02_context + siembra 03_specs + produce gap report
 - `distill_context/` (pesada, manual)
   - convierte `00_inbox/` → `02_context/` + prepara `03_specs/`
 - `write_spec/` (ligera/media)
@@ -282,7 +284,7 @@ Debe soportar:
 Imprimir:
 1) entrar al folder
 2) dropear contexto en `00_inbox`
-3) ejecutar Distill (referencia a `01_harness/TASKFLOW.md`)
+3) ejecutar `initial-context-building` (ver `shared/skills/initial-context-building/SKILL.md`) para bootstrapping completo, o `distill-context` si el inbox ya tiene contenido y el contexto está iniciado
 
 ---
 
